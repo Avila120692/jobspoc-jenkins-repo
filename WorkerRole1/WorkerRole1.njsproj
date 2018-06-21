@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Jenkinsfile.js" />
     <Compile Include="worker.js" />
     <Compile Include="startup.js" />
     <Content Include="package.json" />
