@@ -1,0 +1,14 @@
+{
+  "name": "worker-role1",
+  "version": "0.0.0",
+  "description": "WorkerRole1",
+  "scripts": {
+    "start": "node worker"
+  },
+  "author": {
+    "name": "saavilae"
+  },
+  "engines": {
+    "node": "~6.10.2"
+  }
+}
