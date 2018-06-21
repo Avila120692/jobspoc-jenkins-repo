@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                bat 'ECHO "Job Flow"'
+                echo 'Hello World!'
             }
         }
     }
