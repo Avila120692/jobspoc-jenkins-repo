@@ -1,9 +1,14 @@
 pipeline {
-    agent any
+    agent {
+		node {
+			label 'Windows-Node'
+		}
+	}
     stages {
         stage('Setup') {
             steps {
-                echo 'Hello World!'
+                echo 'Setting up environment'
+				echo 'Environment ready'
             }
         }
     }
