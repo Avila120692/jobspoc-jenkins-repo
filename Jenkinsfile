@@ -7,8 +7,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                echo 'Setting up environment'
-				echo 'Environment ready'
+                bat 'ECHO Im running on Windows!'
             }
         }
     }
