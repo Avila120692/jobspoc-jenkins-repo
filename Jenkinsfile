@@ -8,60 +8,59 @@ pipeline {
   stages {
     stage('Start') {
       steps {
-        bat 'ECHO *****************************************************************'
-        bat 'ECHO Stage : START'
-        bat 'ECHO Im running on Windows!'
-		bat 'DIR'
-        bat 'CD hrh2sprod'
-		bat 'CD' 
-		bat 'DIR'
+		bat '@echo off'
+        bat 'echo***************************************************************'
+        bat 'echo Stage : START'
+        bat 'echo Im running on Windows!'
+		bat 'dir'
+        bat 'cd hrh2sprod'
+		bat 'cd' 
+		bat 'dir'
       }
     }
     stage('Store') {
       steps {
-        bat 'ECHO *****************************************************************'
-        bat 'ECHO Stage : STORE'
+        bat 'echo *****************************************************************'
+        bat 'echo Stage : STORE'
       }
     }
     stage('Archive') {
       steps {
-        bat 'ECHO *****************************************************************'
-        bat 'ECHO Stage : ARCHIVE'
+        bat 'echo *****************************************************************'
+        bat 'echo Stage : ARCHIVE'
       }
     }
     stage('Execute') {
       steps {
-        bat 'ECHO *****************************************************************'
-        bat 'ECHO Loading file <filename>'
+        bat 'echo *****************************************************************'
+        bat 'echo Loading file "<filename>"'
       }
     }
   }
   post {
     always {
-      bat 'ECHO This will always run'
+      bat 'echo This will always run'
 
     }
 
     success {
-      bat 'ECHO This will run only if successful'
+      bat 'echo This will run only if successful'
 
     }
 
     failure {
-      bat 'ECHO This will run only if failed'
+      bat 'echo This will run only if failed'
 
     }
 
     unstable {
-      bat 'ECHO This will run only if the run was marked as unstable'
+      bat 'echo This will run only if the run was marked as unstable'
 
     }
 
     changed {
-      bat 'ECHO This will run only if the state of the Pipeline has changed'
-      bat 'ECHO For example, if the Pipeline was previously failing but is now successful'
-
+      bat 'echo This will run only if the state of the Pipeline has changed'
+      bat 'echo For example, if the Pipeline was previously failing but is now successful'
     }
-
   }
 }
