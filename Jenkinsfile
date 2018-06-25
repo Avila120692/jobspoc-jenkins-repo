@@ -8,13 +8,9 @@ pipeline {
   stages {
     stage('Start') {
       steps {
-		bat 'echo off'
         bat 'echo ***************************************************************'
         bat 'echo Stage : START'
         bat 'echo Im running on Windows!'
-		bat 'dir'
-        bat 'cd C:\\Jenkins\\workspace\\test-pipeline_master-QTITBTIECZER4MZBPQM2BCDOEBJYYACJRPUVWTRNYEFUK2S2W2YA\\hrh2sprod'
-		bat 'cd' 
 		bat 'dir'
       }
     }
@@ -33,7 +29,8 @@ pipeline {
     stage('Execute') {
       steps {
         bat 'echo *****************************************************************'
-        bat 'echo Loading file "<filename>"'
+        bat 'echo Loading file "<sample>"'
+		bat 'call sample.cmd'
       }
     }
   }
