@@ -9,7 +9,7 @@ pipeline {
     stage('Start') {
       steps {
 		bat '@echo off'
-        bat 'echo***************************************************************'
+        bat 'echo ***************************************************************'
         bat 'echo Stage : START'
         bat 'echo Im running on Windows!'
 		bat 'dir'
