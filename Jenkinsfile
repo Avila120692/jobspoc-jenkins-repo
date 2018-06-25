@@ -31,7 +31,7 @@ pipeline {
         bat 'echo *****************************************************************'
 		bat 'echo Stage : EXECUTE'
         bat 'echo Loading file : "<filename>"'
-		bat "call "hrh2sprod\\job\HRFidEmpFull.cmd"'
+		bat "call "hrh2sprod\\job\\HRFidEmpFull.cmd"'
       }
     }
 	stage('Test') {
