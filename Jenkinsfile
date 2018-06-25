@@ -29,15 +29,15 @@ pipeline {
     stage('Execute') {
       steps {
         bat 'echo *****************************************************************'
-        bat 'echo Loading file "<sample>"'
-		bat 'call sample.cmd'
+		bat 'echo Stage : EXECUTE'
+        bat 'echo Loading file : "<filename>"'
+		bat "call "hrh2sprod\\job\HRFidEmpFull.cmd"'
       }
     }
 	stage('Test') {
       steps {
         bat 'echo *****************************************************************'
-        bat 'echo Loading file "<sample2>"'
-		bat 'call "hrh2sprod\\sample2.cmd"'
+        bat 'echo Stage : TEST'
       }
     }
   }
