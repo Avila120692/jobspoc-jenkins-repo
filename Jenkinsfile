@@ -10,6 +10,10 @@ pipeline {
 				bat 'ECHO "*****************************************************************"'
 				bat 'ECHO "START"'
                 bat 'ECHO "Im running on Windows!"'
+				bat 'ECHO "-----------------------------------------------------------------"'
+				bat 'DIR'
+				bat 'ECHO "-----------------------------------------------------------------"'
+				bat 'CD hrh2sprod\\job'
             }
         }
 		stage('Store') {
@@ -24,7 +28,7 @@ pipeline {
                 bat 'ECHO "ARCHIVING FILES"'
             }
         }
-		stage('Load') {
+		stage('Execute') {
 			steps {
 				bat 'ECHO "*****************************************************************"'
 				bat 'ECHO "Loading file <filename>"'
