@@ -13,7 +13,9 @@ pipeline {
 				bat 'ECHO "-----------------------------------------------------------------"'
 				bat 'DIR'
 				bat 'ECHO "-----------------------------------------------------------------"'
-				bat 'CD hrh2sprod\\job'
+				bat 'CD "C:\Jenkins\workspace\test-pipeline_master-\\hrh2sprod\\job"'
+				bat 'CD'
+				bat 'DIR'
             }
         }
 		stage('Store') {
