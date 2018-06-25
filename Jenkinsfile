@@ -24,11 +24,12 @@ pipeline {
                 bat 'ECHO ARCHIVING FILES'
             }
         }
-		stage('Load')
+		stage('Load') {
 			steps {
 				bat 'ECHO *****************************************************************'
 				bat 'ECHO Loading file <filename>'
 			}
+		}
     }
     post {
         always {
