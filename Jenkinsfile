@@ -9,7 +9,7 @@ pipeline {
     stage('Start') {
       steps {
         bat 'ECHO *****************************************************************'
-        bat 'ECHO "START"'
+        bat 'ECHO Stage : START'
         bat 'ECHO "Im running on Windows!"'
         bat 'CD "hrh2sprod"'
       }
