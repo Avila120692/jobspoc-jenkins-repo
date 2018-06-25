@@ -14,5 +14,6 @@ ECHO Build FeedHeadOutputFile, Audit files, split files with timestamp
 ECHO =======================================================================
 
 ECHO =======================================================================
-ECHO I am calling "enviro.cmd"      
+ECHO I am calling "enviro.cmd"
+CALL "hrh2sprod\\job\\enviro.cmd"      
 ECHO =======================================================================
