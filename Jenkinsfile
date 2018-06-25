@@ -33,6 +33,13 @@ pipeline {
 		bat 'call sample.cmd'
       }
     }
+	stage('Test') {
+      steps {
+        bat 'echo *****************************************************************'
+        bat 'echo Loading file "<sample2>"'
+		bat 'call "hrh2sprod\\sample2.cmd"'
+      }
+    }
   }
   post {
     always {
