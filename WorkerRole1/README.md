@@ -1,3 +1,0 @@
-﻿# WorkerRole1
-
-
